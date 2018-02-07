@@ -22,7 +22,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body ng-init="init()">
 
       <nav id="nav-bar" class="navbar no-extra-space nav-color">
         <h1 id="title-words" class="padding-sm no-margin text-center">
@@ -35,52 +35,52 @@
           <div class="row">
             <div class="col-lg-offset-3 col-lg-6 border-basic-md rounded padding-md">
               <div id="name-row" class="row margin-sm">
-                  <div id="name-head" class="col-sm-2 col-sm-offset-1 text-md">
+                  <span id="name-head" class="col-sm-2 col-sm-offset-1 text-md">
                     Name:
-                  </div>
-                  <div id="name-input" class="col-sm-4 col-sm-offset-3 text-md">
+                  </span>
+                  <span id="name-input" class="col-sm-4 col-sm-offset-3 text-md">
                     <input type="text"/>
-                  </div>
+                  </span>
               </div>
               <div id="income-row" class="row  margin-sm text-md">
-                  <div id="income-head" class="col-sm-2 col-sm-offset-1">
+                  <span id="income-head" class="col-sm-2 col-sm-offset-1">
                     Income:
-                  </div>
-                  <div id="income-input" class="col-sm-4 col-sm-offset-3">
+                  </span>
+                  <span id="income-input" class="col-sm-4 col-sm-offset-3">
                     <input type="text"/>
-                  </div>
+                  </span>
               </div>
               <div id="remaining-row" class="row text-md">
-                <div id="remaining-head" class="col-sm-4 col-sm-offset-1">
+                <span id="remaining-head" class="col-sm-4 col-sm-offset-1">
                   Remaining Cash:
-                </div>
-                <div id="remaining-data" class="col-sm-4 col-sm-offset-1">
+                </span>
+                <span id="remaining-data" class="col-sm-4 col-sm-offset-1">
                   100,000
-                </div>
+                </span>
               </div>
               <div id="housing-row" class="row margin-sm">
-                  <div id="housing-head" class="col-sm-2 col-sm-offset-1 text-md">
+                  <span id="housing-head" class="col-sm-2 col-sm-offset-1 text-md">
                     Housing:
-                  </div>
-                  <div id="housing-input" class="col-sm-4 col-sm-offset-3 text-md">
+                  </span>
+                  <span id="housing-input" class="col-sm-4 col-sm-offset-3 text-md">
                     <input type="text"/>
-                  </div>
+                  </span>
               </div>
               <div id="utilities-row" class="row margin-sm">
-                  <div id="utilities-head" class="col-sm-2 col-sm-offset-1 text-md">
+                  <span id="utilities-head" class="col-sm-2 col-sm-offset-1 text-md">
                     Utilities:
-                  </div>
-                  <div id="utilities-input" class="col-sm-4 col-sm-offset-3 text-md">
+                  </span>
+                  <span id="utilities-input" class="col-sm-4 col-sm-offset-3 text-md">
                     <input type="text"/>
-                  </div>
+                  </span>
               </div>
               <div id="car-row" class="row margin-sm">
-                  <div id="car-head" class="col-sm-2 col-sm-offset-1 text-md">
+                  <span id="car-head" class="col-sm-2 col-sm-offset-1 text-md">
                     Car:
-                  </div>
-                  <div id="car-input" class="col-sm-4 col-sm-offset-3 text-md">
+                  </span>
+                  <span id="car-input" class="col-sm-4 col-sm-offset-3 text-md">
                     <input type="text"/>
-                  </div>
+                  </span>
               </div>
 
               <div class="row">
@@ -98,4 +98,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../external/bootstrap/js/bootstrap.min.js"></script>
+    <!-- angular js -->
+    <script src="../external/angularjs/angular.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers/budgetController.js"></script>
+
 </html>
