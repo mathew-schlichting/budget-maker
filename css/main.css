@@ -7,9 +7,12 @@ body {
   background-color: aliceblue;
 }
 
-.nav-color {
+.my-navbar {
   background-color: #80B0EE;
+  height: 60px;
 }
+
+
 
 .border-basic-sm {
   border: black solid 1pt;
@@ -31,12 +34,19 @@ a:visited {
 }
 
 .full-height {
-  min-height: 100vh;
-  heights: 100%;
-
+  min-height: 100vh !important */;
 }
+
+.full-width {
+  min-width: 100vh !important;
+}
+
 
 .rounded {
   border-radius: 12px;
 
+}
+
+.pos-fixed{
+  position: fixed !important;
 }
