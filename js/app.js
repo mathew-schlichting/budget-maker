@@ -11,8 +11,7 @@ budgetApp.config(function($stateProvider) {
 }).controller("appCtrl", function($scope, $state) {
 
   $scope.init = function (){
-    alert(1);
-    $state.go("budgetForm");
+    $state.go("budgetList");
   };
 
 });
